@@ -1,0 +1,211 @@
+body[data-sidebar=dark] .vertical-menu,
+body[data-sidebar=dark] .navbar-brand-box {
+    background: #00293C !important;
+}
+
+
+/* table */
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1f656d1c !important;
+}
+
+
+/* end table */
+
+.page-item.active .page-link {
+    background-color: #2143eb !important;
+    border-color: #2143eb !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #2143eb !important;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle,
+.btn-primary,
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #2143EB !important;
+    border-color: #2143EB !important;
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled).active,
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.show>.btn-outline-danger.dropdown-toggle,
+.btn-danger,
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #F62A00 !important;
+    border-color: #F62A00 !important;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active,
+.btn-outline-success:not(:disabled):not(.disabled):active,
+.show>.btn-outline-success.dropdown-toggle,
+.btn-success,
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #089c11;
+    border-color: #089c11;
+}
+
+.bg1 {
+    background-color: #1E656D !important;
+}
+
+.bg2 {
+    /* background-color: #F1FECE !important; */
+    background: linear-gradient(-180deg, #F1FECE, #dbe98a);
+}
+
+.text1 {
+    color: #F1FECE !important;
+}
+
+.text2 {
+    color: #1e2a78 !important;
+}
+
+.border1 {
+    border: 1px solid #1f656d !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.text-danger {
+    color: #F62A00 !important;
+}
+
+.text-primary {
+    color: #2143eb!important;
+}
+
+.glow {
+    box-shadow: 0 0px 10px #F1FECE !important;
+}
+
+.glow2 {
+    box-shadow: 0 0px 10px #01293C !important;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+
+/* placeholder miring */
+
+::-webkit-input-placeholder {
+    font-style: italic !important;
+}
+
+ :-moz-placeholder {
+    font-style: italic !important;
+}
+
+ ::-moz-placeholder {
+    font-style: italic !important;
+}
+
+ :-ms-input-placeholder {
+    font-style: italic !important;
+}
+
+
+/* end placeholder */
+
+.bg_image1 {
+    background-image: url(../../uploads/file/pattern.png) !important;
+    background-size: contain !important;
+    background-repeat: repeat-y !important;
+}
+
+input:focus,
+textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 #00aaff, 0 0 0 #00aaff, 0 0 5px #00aaff !important;
+}
+
+.container-fluid .card {
+    border: 1px solid #1c1c58 !important;
+    border-style: dotted;
+}
+
+
+/* flash */
+
+.flash1 {
+    animation-name: flash1;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.flash2 {
+    animation-name: flash2;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.flash3 {
+    animation-name: flash3;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash1 {
+    from {
+        color: red;
+    }
+    to {
+        color: white;
+    }
+}
+
+@keyframes flash2 {
+    from {
+        color: blue;
+    }
+    to {
+        color: white;
+    }
+}
+
+@keyframes flash3 {
+    from {
+        color: green;
+    }
+    to {
+        color: white;
+    }
+}
+
+
+/* end flash */
+
+.select2-selection__rendered {
+    line-height: 31px !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+
+.select2-selection__arrow {
+    height: 34px !important;
+}
