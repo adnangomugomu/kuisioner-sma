@@ -35,6 +35,7 @@ function insert_visitor()
     $CI->load->helper('cookie');
 
     $my_cookie = get_cookie('devices_id');
+    
     if (empty($my_cookie)) {
         $my_cookie = generateRandomString(15) . time();
 
@@ -42,7 +43,7 @@ function insert_visitor()
             'name'   => 'devices_id',
             'value'  => $my_cookie,
             'expire' => '31536000',
-            'secure' => TRUE
+            // 'secure' => TRUE
         ]);
     }
 
