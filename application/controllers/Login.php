@@ -50,6 +50,8 @@ class Login extends CI_Controller
                 'kelurahan' => $run->kode_kel,
                 'username' => $run->username,
                 'type' => $run->otoritas,
+                'id_tingkat' => $run->id_tingkat,
+                'id_kelas' => $run->id_kelas,
             ]);
 
             if ($run->id_otoritas == 1) $link = base_url('super_admin/dashboard');

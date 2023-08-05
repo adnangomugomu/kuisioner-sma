@@ -2,6 +2,16 @@
     .avatar-title {
         background-color: #2143eb !important;
     }
+
+    @media screen and (max-width: 450px) {
+        .page-content {
+            padding: 80px 0px !important;
+        }
+
+        .gambar_icon {
+            display: none;
+        }
+    }
 </style>
 
 <div class="row">
@@ -39,12 +49,24 @@
                     </div>
                     <div class="col-lg-3 col-sm-4 align-self-center">
                         <div class="text-center">
-                            <img src="<?= base_url('assets/skote/dist/') ?>assets/images/crypto/features-img/img-1.png" alt="image" class="img-fluid">
+                            <img src="<?= base_url('assets/skote/dist/') ?>assets/images/crypto/features-img/img-1.png" alt="image" class="img-fluid gambar_icon">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
+<div class="row">
+    <div class="col-md-12">
+        <div class="card" style="background-color: #05c46b !important;">
+            <div class="card-body">
+                <div class="text-center text-white fw-600">Ayo Isi Formulir Hari ini</div>
+                <div class="text-center mt-2">
+                    <a class="btn btn-primary fw-600" href="<?= base_url('siswa/instrumen') ?>"><i class="fa fa-edit mr-1"></i> KLIK DISINI</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

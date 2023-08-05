@@ -29,6 +29,8 @@ class MY_Controller extends CI_Controller
         $this->no_hp = session('no_hp');
         $this->username = session('username');
         $this->foto = session('foto');
+        $this->id_tingkat = session('id_tingkat');
+        $this->id_kelas = session('id_kelas');
     }
 }
 
