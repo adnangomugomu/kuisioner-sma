@@ -100,11 +100,31 @@ function clear_koma($dt)
     return $data;
 }
 
-function generateAlphabetArray($arr) {
+function generateAlphabetArray($arr)
+{
     $alphabet = [];
     for ($i = 0; $i < count($arr); $i++) {
         $letter = chr(ord('A') + $i);  // Mengonversi kode ASCII ke huruf
         array_push($alphabet, $letter);
     }
     return $alphabet;
+}
+
+function numberToLetter($number)
+{
+    if ($number < 0) throw new InvalidArgumentException("Number must be non-negative.");
+
+    $letters = "";
+    while ($number >= 0) {
+        $remainder = $number % 26;
+        $letters = chr(65 + $remainder) . $letters;
+        $number = intdiv($number, 26) - 1;
+    }
+
+    return $letters;
+}
+
+function zerofill($number, $length)
+{
+    return str_pad($number, $length, '0', STR_PAD_LEFT);
 }

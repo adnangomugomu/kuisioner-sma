@@ -14,8 +14,18 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-
-                
+                <li class="<?= $this->uri->segment(2) == 'rekap_kelas' ? 'mm-active' : '' ?> single-link">
+                    <a href="<?= base_url('admin/rekap_kelas') ?>" class="waves-effect fw-600">
+                        <i class="bx bx-building-house"></i>
+                        <span>Rekap Kelas</span>
+                    </a>
+                </li>                
+                <li class="<?= $this->uri->segment(2) == 'manajemen_export' ? 'mm-active' : '' ?> single-link">
+                    <a href="<?= base_url('admin/manajemen_export') ?>" class="waves-effect fw-600">
+                        <i class="bx bx-file"></i>
+                        <span>Manajemen Export</span>
+                    </a>
+                </li>                
                 <li class="menu-title" key="t-apps">Referensi</li>
                 <li class="<?= $this->uri->segment(2) == 'ref_instrumen' ? 'mm-active' : '' ?> single-link">
                     <a href="<?= base_url('admin/ref_instrumen') ?>" class="waves-effect fw-600">

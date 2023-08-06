@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-4 align-self-center">
                         <div>
-                            <img src="<?= base_url('assets/skote/dist/') ?>assets/images/crypto/features-img/img-1.png" alt="image" class="img-fluid d-block">
+                            <img src="<?= base_url('assets/skote/dist/') ?>assets/images/crypto/features-img/img-1.png" alt="image" class="img-fluid d-block gambar_icon">
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h4 class="text-center">Rekap Pengisian Hari Ini <?= tgl_indo(date('Y-m-d')) ?></h4>
+        <h4 class="text-center">Rekap Pengisian Hari Ini (<?= tgl_indo(date('Y-m-d')) ?>)</h4>
 
         <div class="row">
             <?php foreach ($rekap as $i => $dt) : ?>
@@ -61,7 +61,7 @@
                             <div class="media">
                                 <div class="media-body">
                                     <p class="text-primary mb-1">Kelas <?= $dt->nm_tingkat ?>-<?= $dt->nama ?> <span class="badge badge-dark"><i class="fa fa-users mr-1"></i> <?= $dt->total_siswa ?></span></p>
-                                    <h6 class="mb-0 text-danger">0% (0 dari <?= $dt->total_siswa ?>)</h6>
+                                    <h6 class="mb-0 text-danger"><?= round(($dt->total_isi / $dt->total_siswa) * 100, 2) ?>% (<?= $dt->total_isi ?> dari <?= $dt->total_siswa ?>)</h6>
                                 </div>
 
                                 <div class="mini-stat-icon avatar-sm rounded-circle bg-primary align-self-center">

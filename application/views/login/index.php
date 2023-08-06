@@ -44,6 +44,12 @@
             background-color: #2043eb !important;
             border-color: #2043eb !important;
         }
+
+        @media screen and (max-width: 450px) {
+            .gambar_icon {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -53,7 +59,7 @@
         <div class="container-fluid p-0">
             <div class="row no-gutters">
 
-                <div class="col-xl-9">
+                <div class="col-xl-9 gambar_icon">
                     <div class="auth-full-bg pt-lg-5 p-4">
                         <div class="w-100">
                             <div class="bg-overlay"></div>
@@ -257,7 +263,7 @@
                 data: data,
                 dataType: 'JSON',
                 processData: false,
-                contentType: false,              
+                contentType: false,
                 beforeSend: function(res) {
                     Swal.fire({
                         title: 'Loading ...',

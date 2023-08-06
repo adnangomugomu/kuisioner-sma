@@ -10,14 +10,14 @@
 
             <div class="card-body">
 
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <ul class="nav nav-pills nav-justified rounded border border-secondary" style="background-color: #fff;">
                             <?php foreach ($ref_tingkat as $i => $dt) : ?>
                                 <li class="nav-item">
                                     <a href="#" data-toggle="tab" onclick="load_table();" aria-expanded="true" data-value="<?= encode_id($dt->id) ?>" class="nav-link btn_tingkat <?= $i == 0 ? 'active' : '' ?>">
-                                        <span class="d-none d-sm-block">Tingkat <?= $dt->nama ?></span>
+                                        <span class="">Tingkat <?= $dt->nama ?></span>
                                     </a>
                                 </li>
                             <?php endforeach; ?>

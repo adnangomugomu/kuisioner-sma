@@ -2,16 +2,6 @@
     .avatar-title {
         background-color: #2143eb !important;
     }
-
-    @media screen and (max-width: 450px) {
-        .page-content {
-            padding: 80px 0px !important;
-        }
-
-        .gambar_icon {
-            display: none;
-        }
-    }
 </style>
 
 <div class="row">

@@ -209,3 +209,12 @@ textarea:focus {
 .select2-selection__arrow {
     height: 34px !important;
 }
+
+@media screen and (max-width: 450px) {
+    .page-content {
+        padding: 80px 0px !important;
+    }
+    .gambar_icon {
+        display: none !important;
+    }
+}
