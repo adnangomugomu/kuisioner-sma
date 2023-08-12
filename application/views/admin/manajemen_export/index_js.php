@@ -16,7 +16,7 @@
                 var select_tahun = $('#select_tahun').val();
                 var select_periode = $('input[name=pilih]:checked').val();
 
-                window.open(`<?= base_url('admin/export/periode?') ?>kelas=${select_kelas}&periode=${select_periode}&tahun=${select_tahun}`);
+                window.open(`<?= base_url($this->type . '/export/periode?') ?>kelas=${select_kelas}&periode=${select_periode}&tahun=${select_tahun}`);
 
             } else {
                 return false;

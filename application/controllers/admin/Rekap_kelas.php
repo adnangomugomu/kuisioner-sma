@@ -18,11 +18,15 @@ class Rekap_kelas extends MY_Controller
             'title' => 'Rekap Kelas',
         ];
 
+        $where = '';
+        if ($this->type == 'walkas') $where .= "AND a.id='$this->id_kelas'";
+
         $data['list_kelas'] = $this->db->query("SELECT
             a.id, a.nama, b.nama AS nm_tingkat
         FROM
             ref_kelas a
             LEFT JOIN ref_tingkat b ON b.id = a.id_kelas
+        WHERE 1=1 $where
         ORDER BY
             a.id
         ")->result();

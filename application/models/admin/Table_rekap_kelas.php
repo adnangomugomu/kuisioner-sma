@@ -15,9 +15,10 @@ class Table_rekap_kelas extends CI_Model
     {
         $tanggal = $this->input->get('tanggal');
         $kelas = $this->input->get('kelas');
-
+        
         $where = '';
         if ($kelas != 'all') $where .= "AND a.id_kelas='$kelas' ";
+        if($this->type=='walkas') $where .= "AND a.id_kelas='$this->id_kelas'";
 
         $query = "SELECT a.nama, a.num, concat(c.nama,'-',b.nama) as nm_kelas, d.all_jenis, d.all_jawab
             from data_user a 

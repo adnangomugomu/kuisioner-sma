@@ -24,6 +24,7 @@ class MY_Controller extends CI_Controller
 
         $this->id_akun = session('id_akun');
         $this->id_otoritas = session('id_otoritas');
+        $this->type = session('type');
         $this->nama = session('nama');
         $this->nm_email = session('email');
         $this->no_hp = session('no_hp');

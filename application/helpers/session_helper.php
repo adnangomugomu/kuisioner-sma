@@ -3,9 +3,9 @@
 function data_sistem($get = 'nama')
 {
     $data = [
-        'nama' => 'Sistem Informasi Kuisioner SMA AL AZHAR 7 Solo Baru',
-        'deskripsi' => 'Aplikasi untuk kuisioner',
-        'pemilik' => 'SMA AL AZHAR 7 Solo Baru',
+        'nama' => 'KURIKULUM ADAB',
+        'deskripsi' => 'SMA ISLAM AL AZHAR 7 SUKOHARJO',
+        'pemilik' => 'SMA AL AZHAR 7',
         'logo' => base_url('uploads/img/logo.png'),
         'nickname' => 'AL AZHAR 7',
     ];

@@ -53,3 +53,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'login';
 $route['404_override'] = 'not_found';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['walkas/rekap_kelas'] = 'admin/rekap_kelas';
+$route['walkas/rekap_kelas/(:any)'] = 'admin/rekap_kelas/$1';
+
+$route['walkas/manajemen_export'] = 'admin/manajemen_export';
+$route['walkas/export/(:any)'] = 'admin/export/periode/$1';

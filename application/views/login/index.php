@@ -25,7 +25,7 @@
 
     <style>
         .auth-full-bg .bg-overlay {
-            background: url('<?= base_url('uploads/img/banner1.jpg') ?>');
+            background: url('<?= base_url('uploads/img/banner.jpeg') ?>');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
