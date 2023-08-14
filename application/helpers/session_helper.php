@@ -5,7 +5,7 @@ function data_sistem($get = 'nama')
     $data = [
         'nama' => 'KURIKULUM ADAB',
         'deskripsi' => 'SMA ISLAM AL AZHAR 7 SUKOHARJO',
-        'pemilik' => 'SMA AL AZHAR 7',
+        'pemilik' => 'SMAI AL AZHAR 7',
         'logo' => base_url('uploads/img/logo.png'),
         'nickname' => 'AL AZHAR 7',
     ];
