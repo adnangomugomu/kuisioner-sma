@@ -8,7 +8,7 @@ class Login extends CI_Controller
     public function index()
     {
         insert_visitor();
-        
+
         if (@$_SESSION['is_login']) {
             if ($_SESSION['id_otoritas'] == 1) $link = base_url('super_admin/dashboard');
             elseif ($_SESSION['id_otoritas'] == 2) $link = base_url('admin/dashboard');
